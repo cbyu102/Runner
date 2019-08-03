@@ -1,5 +1,8 @@
 //https://phaser.io/examples/v2/time/basic-repeat-event --> make the stars
 /*************************************************************************
+
+WHY NO WORKING?
+
 The technical tilt that I did was using two different
 groups for the health bar. The light group's alpha is always decreasing
 until 0 unless you pick up a star which would increase it. If all the
