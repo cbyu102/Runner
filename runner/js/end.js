@@ -11,11 +11,11 @@ GameOver.prototype = {
         //There's nothing to preload so this is empty
     },
     create: function() {
+        game.add.sprite(0,0,'atlas', 'end.png');
+        
         //Score and restart is here
-        var instructions = game.add.text(16, 16, '', { fontSize: '32px', fill: '#FFFFFF' });
-        instructions.text = "Game Over \n"
-                          + "Score: " + this.score
-                          + "\nPress SPACEBAR to Restart";
+        var instructions = game.add.text(300, 250, '', { fontSize: '100px', fill: '#000000' });
+        instructions.text = this.score + " m"
 
     },
     update: function() {
@@ -24,4 +24,4 @@ GameOver.prototype = {
             game.state.start('Play');
         }
     },
-}
+} 

@@ -1,9 +1,9 @@
 "use strict"
 
 // Define bg and its methods
-function bush(game, x, y, img){
+function bush(game, x, y, atlas, img){
 
-	Phaser.Sprite.call(this, game, x, y, img);
+	Phaser.Sprite.call(this, game, x, y, atlas, img);
 	this.scale.setTo(1.25, 1.25);
 
     // put some physics on it

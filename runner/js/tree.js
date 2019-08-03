@@ -1,9 +1,9 @@
 "use strict"
 
 // Define bg and its methods
-function tree(game, x, y, img, speed){
+function tree(game, x, y, atlas, img, speed){
 
-	Phaser.Sprite.call(this, game, x, y, img);
+	Phaser.Sprite.call(this, game, x, y, atlas, img);
 
     // put some physics on it
     game.physics.enable(this);
